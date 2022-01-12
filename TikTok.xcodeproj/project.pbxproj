@@ -13,9 +13,12 @@
 		6093ED3C278E17FE0016306F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6093ED3A278E17FE0016306F /* Main.storyboard */; };
 		6093ED3E278E18000016306F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6093ED3D278E18000016306F /* Assets.xcassets */; };
 		6093ED41278E18000016306F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6093ED3F278E18000016306F /* LaunchScreen.storyboard */; };
+		60BC71B7278E190B00B8C7F9 /* CustomTTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BC71B6278E190B00B8C7F9 /* CustomTTCell.swift */; };
+		F510CF1C474D70B7E3FECCE2 /* Pods_TikTok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A54EB3C2E551A3A6572DCE1 /* Pods_TikTok.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A54EB3C2E551A3A6572DCE1 /* Pods_TikTok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TikTok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6093ED31278E17FE0016306F /* TikTok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikTok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6093ED34278E17FE0016306F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6093ED36278E17FE0016306F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		6093ED3D278E18000016306F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6093ED40278E18000016306F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6093ED42278E18000016306F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60BC71B6278E190B00B8C7F9 /* CustomTTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTTCell.swift; sourceTree = "<group>"; };
+		6BE592325F3EFAB30963717D /* Pods-TikTok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikTok.debug.xcconfig"; path = "Target Support Files/Pods-TikTok/Pods-TikTok.debug.xcconfig"; sourceTree = "<group>"; };
+		E09E57A1AB7DD36AD402A458 /* Pods-TikTok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikTok.release.xcconfig"; path = "Target Support Files/Pods-TikTok/Pods-TikTok.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F510CF1C474D70B7E3FECCE2 /* Pods_TikTok.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				6093ED33278E17FE0016306F /* TikTok */,
 				6093ED32278E17FE0016306F /* Products */,
+				6DEF92D78BC03F3F0FCEF994 /* Pods */,
+				900691933B793E1D23330121 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,26 @@
 				6093ED3D278E18000016306F /* Assets.xcassets */,
 				6093ED3F278E18000016306F /* LaunchScreen.storyboard */,
 				6093ED42278E18000016306F /* Info.plist */,
+				60BC71B6278E190B00B8C7F9 /* CustomTTCell.swift */,
 			);
 			path = TikTok;
+			sourceTree = "<group>";
+		};
+		6DEF92D78BC03F3F0FCEF994 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BE592325F3EFAB30963717D /* Pods-TikTok.debug.xcconfig */,
+				E09E57A1AB7DD36AD402A458 /* Pods-TikTok.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		900691933B793E1D23330121 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A54EB3C2E551A3A6572DCE1 /* Pods_TikTok.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6093ED45278E18000016306F /* Build configuration list for PBXNativeTarget "TikTok" */;
 			buildPhases = (
+				F53C7EF9BE018D0624251D00 /* [CP] Check Pods Manifest.lock */,
 				6093ED2D278E17FE0016306F /* Sources */,
 				6093ED2E278E17FE0016306F /* Frameworks */,
 				6093ED2F278E17FE0016306F /* Resources */,
+				158CC06A4B67F8246E7FEA46 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,11 +162,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		158CC06A4B67F8246E7FEA46 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TikTok/Pods-TikTok-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TikTok/Pods-TikTok-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TikTok/Pods-TikTok-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F53C7EF9BE018D0624251D00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TikTok-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6093ED2D278E17FE0016306F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60BC71B7278E190B00B8C7F9 /* CustomTTCell.swift in Sources */,
 				6093ED39278E17FE0016306F /* ViewController.swift in Sources */,
 				6093ED35278E17FE0016306F /* AppDelegate.swift in Sources */,
 				6093ED37278E17FE0016306F /* SceneDelegate.swift in Sources */,
@@ -284,6 +356,7 @@
 		};
 		6093ED46278E18000016306F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BE592325F3EFAB30963717D /* Pods-TikTok.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +385,7 @@
 		};
 		6093ED47278E18000016306F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E09E57A1AB7DD36AD402A458 /* Pods-TikTok.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
